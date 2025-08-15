@@ -10,7 +10,3 @@ This is a portfolio so to find individual readme files about each project go int
 ## Authors
 
 Ayz1x 
-
-
-## Acknowledgments
-Rai
