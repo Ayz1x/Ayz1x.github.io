@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meadow Skeins - Browse Yarn Products from TikTok Shop and eBay</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-circle">
+                        <img src="MeadowSkeins.jpg" alt="Meadow Skeins Logo" class="logo-image">
+                    </div>
+                    <span>Meadow Skeins</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <span class="theme-label">🌙</span>
+                    <div class="toggle-switch" id="theme-toggle">
+                        <div class="toggle-slider"></div>
+                    </div>
+                    <span class="theme-label">☀️</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-container">
+            <div class="section-header">
+                <h1>Our Products</h1>
+                <p>Discover our collection of premium yarn from TikTok Shop and eBay</p>
+            </div>
+            <div class="product-filters">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-options">
+                    <select id="platformFilter">
+                        <option value="all">All Platforms</option>
+                        <option value="tiktok">TikTok Shop</option>
+                        <option value="ebay">eBay</option>
+                    </select>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+
+            <div class="pagination">
+                <button id="prevPage" disabled>Previous</button>
+                <span id="pageInfo">Page 1 of 1</span>
+                <button id="nextPage">Next</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Meadow Skeins. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize product listing
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize DOM elements
+            const productGrid = document.getElementById('productGrid');
+            const searchInput = document.getElementById('searchInput');
+            const platformFilter = document.getElementById('platformFilter');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const prevPageBtn = document.getElementById('prevPage');
+            const nextPageBtn = document.getElementById('nextPage');
+            const pageInfo = document.getElementById('pageInfo');
+
+            // Initialize state
+            let currentPage = 1;
+            let itemsPerPage = 12;
+            let totalItems = 0;
+            let currentFilter = {
+                platform: 'all',
+                category: 'all'
+            };
+
+            // Initialize filters
+            platformFilter.addEventListener('change', updateProducts);
+            categoryFilter.addEventListener('change', updateProducts);
+
+            // Search functionality
+            searchInput.addEventListener('input', debounce(updateProducts, 500));
+
+            // Pagination
+            prevPageBtn.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    updateProducts();
+                }
+            });
+
+            nextPageBtn.addEventListener('click', () => {
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    updateProducts();
+                }
+            });
+
+            // Product template
+            function createProductCard(product) {
+                return `
+                    <div class="product-card" data-platform="${product.platform}">
+                        <img src="${product.image}" alt="${product.title}" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">${product.title}</h3>
+                            <p class="product-price">${product.price}</p>
+                            <p class="product-platform">${product.platform}</p>
+                            <button class="view-details" onclick="viewProductDetails('${product.id}')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Update products display
+            async function updateProducts() {
+                try {
+                    const response = await fetch('http://localhost:3000/api/products');
+                    const { products, total } = await response.json();
+                    
+                    // Apply filters
+                    let filteredProducts = products;
+                    
+                    if (currentFilter.platform !== 'all') {
+                        filteredProducts = filteredProducts.filter(p => p.platform === currentFilter.platform);
+                    }
+                    
+                    if (currentFilter.category !== 'all') {
+                        filteredProducts = filteredProducts.filter(p => p.category === currentFilter.category);
+                    }
+                    
+                    // Update pagination
+                    totalItems = filteredProducts.length;
+                    const totalPages = Math.ceil(totalItems / itemsPerPage);
+                    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+                    
+                    // Update page buttons state
+                    prevPageBtn.disabled = currentPage === 1;
+                    nextPageBtn.disabled = currentPage === totalPages;
+                    
+                    // Get current page products
+                    const start = (currentPage - 1) * itemsPerPage;
+                    const end = start + itemsPerPage;
+                    const pageProducts = filteredProducts.slice(start, end);
+                    
+                    // Render products
+                    productGrid.innerHTML = pageProducts.map(createProductCard).join('');
+                } catch (error) {
+                    console.error('Error updating products:', error);
+                    productGrid.innerHTML = '<p>Error loading products. Please try again later.</p>';
+                }
+            }
+
+            // Initialize products
+            updateProducts();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+    "products": [
+        {
+            "id": "tik1",
+            "title": "Luxury Merino Wool Yarn",
+            "price": "$19.99",
+            "image": "https://via.placeholder.com/300x300?text=Merino+Wool",
+            "description": "Premium 100% merino wool yarn, perfect for knitting and crocheting",
+            "platform": "TikTok Shop",
+            "category": "Wool"
+        },
+        {
+            "id": "tik2",
+            "title": "Organic Cotton Yarn",
+            "price": "$14.99",
+            "image": "https://via.placeholder.com/300x300?text=Organic+Cotton",
+            "description": "Soft and eco-friendly cotton yarn",
+            "platform": "TikTok Shop",
+            "category": "Cotton"
+        },
+        {
+            "id": "eb1",
+            "title": "Alpaca Blend Yarn",
+            "price": "$24.99",
+            "image": "https://via.placeholder.com/300x300?text=Alpaca+Blend",
+            "description": "Luxurious alpaca blend yarn, perfect for winter projects",
+            "platform": "eBay",
+            "category": "Wool"
+        },
+        {
+            "id": "eb2",
+            "title": "Silk Yarn",
+            "price": "$29.99",
+            "image": "https://via.placeholder.com/300x300?text=Silk+Yarn",
+            "description": "Luxurious silk yarn for special projects",
+            "platform": "eBay",
+            "category": "Silk"
+        }
+    ]
+}

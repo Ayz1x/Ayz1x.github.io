@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meadow Skeins - Your One-Stop Shopping Destination</title>
+    <title>Contact Us - Meadow Skeins</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -20,9 +20,9 @@
             </div>
             <div class="nav-right">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
                 </ul>
                 <div class="theme-toggle">
                     <span class="theme-label">🌙</span>
@@ -36,27 +36,43 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Welcome to Meadow Skeins</h1>
-            <p>Discover amazing products from our trusted partners</p>
-            <a href="products.html" class="hero-cta">Browse Our Products</a>
-        </section>
+        <section class="contact-container">
+            <h1>Contact Us</h1>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>Ayazbhol1@hotmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+44 07421515120</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>18 New Way Road, LE5 5UA</p>
+                    </div>
+                </div>
 
-        <section class="platforms">
-            <h2>Shop with Us</h2>
-            <div class="platform-grid">
-                <div class="platform-card">
-                    <i class="fab fa-tiktok"></i>
-                    <h3>TikTok Shop</h3>
-                    <p>Find trendy and unique products</p>
-                    <a href="#" class="platform-link" id="tiktok-link">Visit TikTok Shop</a>
-                </div>
-                <div class="platform-card">
-                    <i class="fab fa-ebay"></i>
-                    <h3>eBay</h3>
-                    <p>Explore great deals and auctions</p>
-                    <a href="https://www.ebay.co.uk/usr/ayz1x_yarn" class="platform-link" id="ebay-link" target="_blank">Visit eBay Store</a>
-                </div>
+                <form id="contact-form" class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </section>
     </main>
