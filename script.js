@@ -83,3 +83,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Mobile Menu Toggle
+function initMobileMenu() {
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (!toggle || !navLinks) return;
+
+    function closeMenu() {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = navLinks.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Close when clicking a nav link (for one-page UX)
+    navLinks.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            closeMenu();
+        }
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && e.target !== toggle) {
+            closeMenu();
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', initMobileMenu);

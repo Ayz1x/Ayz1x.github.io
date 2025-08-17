@@ -19,11 +19,18 @@
                 </a>
             </div>
             <div class="nav-right">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html" class="active">Products</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
+                <a href="checkout.html" class="cart-link" id="nav-cart" aria-label="View cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
                 <div class="theme-toggle">
                     <span class="theme-label">🌙</span>
                     <div class="toggle-switch" id="theme-toggle">
@@ -38,24 +45,19 @@
     <main>
         <section class="products-container">
             <div class="section-header">
-                <h1>Our Products</h1>
-                <p>Discover our collection of premium yarn from TikTok Shop and eBay</p>
+                <h1>Our eBay Listings</h1>
+                <p>Discover our collection of premium yarn from eBay</p>
             </div>
             <div class="product-filters">
-                <div class="search-bar">
-                    <input type="text" id="searchInput" placeholder="Search products...">
-                    <button id="searchBtn"><i class="fas fa-search"></i></button>
-                </div>
                 <div class="filter-options">
-                    <select id="platformFilter">
-                        <option value="all">All Platforms</option>
-                        <option value="tiktok">TikTok Shop</option>
-                        <option value="ebay">eBay</option>
-                    </select>
-                    <select id="categoryFilter">
-                        <option value="all">All Categories</option>
-                    </select>
+                    <span>Showing all eBay listings</span>
                 </div>
+            </div>
+
+            <!-- Loading indicator -->
+            <div id="loader" style="display: block; text-align: center; padding: 20px; color: var(--text-color, #333);">
+                <i class="fas fa-spinner fa-spin" style="font-size: 1.5rem;"></i>
+                <span style="margin-left: 8px;">Loading listings...</span>
             </div>
 
             <div class="product-grid" id="productGrid">
@@ -94,110 +96,7 @@
         </div>
     </footer>
 
-    <script>
-        // Initialize product listing
-        document.addEventListener('DOMContentLoaded', () => {
-            // Initialize DOM elements
-            const productGrid = document.getElementById('productGrid');
-            const searchInput = document.getElementById('searchInput');
-            const platformFilter = document.getElementById('platformFilter');
-            const categoryFilter = document.getElementById('categoryFilter');
-            const prevPageBtn = document.getElementById('prevPage');
-            const nextPageBtn = document.getElementById('nextPage');
-            const pageInfo = document.getElementById('pageInfo');
-
-            // Initialize state
-            let currentPage = 1;
-            let itemsPerPage = 12;
-            let totalItems = 0;
-            let currentFilter = {
-                platform: 'all',
-                category: 'all'
-            };
-
-            // Initialize filters
-            platformFilter.addEventListener('change', updateProducts);
-            categoryFilter.addEventListener('change', updateProducts);
-
-            // Search functionality
-            searchInput.addEventListener('input', debounce(updateProducts, 500));
-
-            // Pagination
-            prevPageBtn.addEventListener('click', () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    updateProducts();
-                }
-            });
-
-            nextPageBtn.addEventListener('click', () => {
-                const totalPages = Math.ceil(totalItems / itemsPerPage);
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    updateProducts();
-                }
-            });
-
-            // Product template
-            function createProductCard(product) {
-                return `
-                    <div class="product-card" data-platform="${product.platform}">
-                        <img src="${product.image}" alt="${product.title}" class="product-image">
-                        <div class="product-info">
-                            <h3 class="product-title">${product.title}</h3>
-                            <p class="product-price">${product.price}</p>
-                            <p class="product-platform">${product.platform}</p>
-                            <button class="view-details" onclick="viewProductDetails('${product.id}')">
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-                `;
-            }
-
-            // Update products display
-            async function updateProducts() {
-                try {
-                    const response = await fetch('http://localhost:3000/api/products');
-                    const { products, total } = await response.json();
-                    
-                    // Apply filters
-                    let filteredProducts = products;
-                    
-                    if (currentFilter.platform !== 'all') {
-                        filteredProducts = filteredProducts.filter(p => p.platform === currentFilter.platform);
-                    }
-                    
-                    if (currentFilter.category !== 'all') {
-                        filteredProducts = filteredProducts.filter(p => p.category === currentFilter.category);
-                    }
-                    
-                    // Update pagination
-                    totalItems = filteredProducts.length;
-                    const totalPages = Math.ceil(totalItems / itemsPerPage);
-                    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
-                    
-                    // Update page buttons state
-                    prevPageBtn.disabled = currentPage === 1;
-                    nextPageBtn.disabled = currentPage === totalPages;
-                    
-                    // Get current page products
-                    const start = (currentPage - 1) * itemsPerPage;
-                    const end = start + itemsPerPage;
-                    const pageProducts = filteredProducts.slice(start, end);
-                    
-                    // Render products
-                    productGrid.innerHTML = pageProducts.map(createProductCard).join('');
-                } catch (error) {
-                    console.error('Error updating products:', error);
-                    productGrid.innerHTML = '<p>Error loading products. Please try again later.</p>';
-                }
-            }
-
-            // Initialize products
-            updateProducts();
-        });
-    </script>
     <script src="script.js"></script>
+    <script src="products.js"></script>
 </body>
 </html>

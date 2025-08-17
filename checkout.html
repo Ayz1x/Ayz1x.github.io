@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Meadow Skeins</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <div class="logo-circle">
+            <img src="MeadowSkeins.jpg" alt="Meadow Skeins Logo" class="logo-image">
+          </div>
+          <span>Meadow Skeins</span>
+        </a>
+      </div>
+      <div class="nav-right">
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="checkout.html" class="cart-link" id="nav-cart" aria-label="View cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge" id="cart-count">0</span>
+        </a>
+        <div class="theme-toggle">
+          <span class="theme-label">🌙</span>
+          <div class="toggle-switch" id="theme-toggle">
+            <div class="toggle-slider"></div>
+          </div>
+          <span class="theme-label">☀️</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products-container" style="max-width: 900px;">
+      <div class="section-header">
+        <h1>Checkout</h1>
+        <p>Provide your details and proceed to payment.</p>
+      </div>
+
+      <div id="cartSummary" class="card" style="margin-bottom: 20px;"></div>
+
+      <form id="checkoutForm" class="card">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="remarks">Remarks (optional)</label>
+          <textarea id="remarks" name="remarks" placeholder="Any special requests..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="payBtn">
+          <i class="fa fa-lock"></i> Pay Now
+        </button>
+      </form>
+
+      <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-color);">Payment is securely processed by Stripe. You will be redirected to a secure checkout page.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Meadow Skeins. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>

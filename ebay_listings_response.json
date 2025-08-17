@@ -1,0 +1,536 @@
+{
+  "GetMyeBaySellingResponse": {
+    "$": {
+      "xmlns": "urn:ebay:apis:eBLBaseComponents"
+    },
+    "Timestamp": "2025-08-17T00:32:19.913Z",
+    "Ack": "Success",
+    "Version": "1271",
+    "ActiveList": {
+      "ItemArray": {
+        "Item": [
+          {
+            "BuyItNowPrice": {
+              "_": "13.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357458421629",
+            "ListingDetails": {
+              "StartTime": "2025-08-14T11:26:13.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/Twist-Spiral-Bundle-Chunky-Knitting-Crochet-Yarn-4x150g-Skeins-C1-/357458421629",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/Twist-Spiral-Bundle-Chunky-Knitting-Crochet-Yarn-4x150g-Skeins-C1?item=357458421629&category=954&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "13.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P28DT10H53M54S",
+            "Title": "Twist/Spiral Bundle Chunky Knitting/Crochet Yarn 4x150g Skeins C1",
+            "WatchCount": "1",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/me8AAeSw0TtoncTF/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "13.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357458461015",
+            "ListingDetails": {
+              "StartTime": "2025-08-14T11:32:41.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/Twist-Spiral-Multicolour-Knitting-Crotchet-Yarn-Skein-4x150g-C2-/357458461015",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/Twist-Spiral-Multicolour-Knitting-Crotchet-Yarn-Skein-4x150g-C2?item=357458461015&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "13.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P28DT11H22S",
+            "Title": "Twist/Spiral Multicolour Knitting/Crotchet Yarn Skein 4x150g C2",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/UUAAAeSweSxoncgY/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "13.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357458466707",
+            "ListingDetails": {
+              "StartTime": "2025-08-14T11:37:52.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/Bundle-of-Soft-Pink-Variegated-Aran-knitting-yarn-4-150g-Skeins-C3--/357458466707",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/Bundle-of-Soft-Pink-Variegated-Aran-knitting-yarn-4-150g-Skeins-C3-?item=357458466707&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "13.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P28DT11H5M33S",
+            "Title": "Bundle of Soft Pink Variegated Aran knitting yarn 4×150g Skeins C3 ",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/OVsAAeSwSoBoncmA/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "19.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357458553903",
+            "ListingDetails": {
+              "StartTime": "2025-08-14T11:55:41.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/DK-Cake-Multicoloured-Yarn-with-Blue-Green-Tones-6-x-100g-Cakes-C4-/357458553903",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/DK-Cake-Multicoloured-Yarn-with-Blue-Green-Tones-6-x-100g-Cakes-C4?item=357458553903&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "19.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P28DT11H23M22S",
+            "Title": "DK Cake Multicoloured Yarn with Blue/Green Tones – 6 x 100g Cakes C4",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/89UAAeSwJCponc63/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "19.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357458568052",
+            "ListingDetails": {
+              "StartTime": "2025-08-14T12:03:02.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/DK-Grey-Gradient-Yarn-Cakes-Bundle-6-x-150g-Knitting-Crochet-Craft-C5-/357458568052",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/DK-Grey-Gradient-Yarn-Cakes-Bundle-6-x-150g-Knitting-Crochet-Craft-C5?item=357458568052&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "19.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P28DT11H30M43S",
+            "Title": "DK Grey Gradient Yarn Cakes Bundle – 6 x 150g Knitting Crochet Craft C5",
+            "WatchCount": "1",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/xE0AAeSwtDBonc9q/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "19.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357458587807",
+            "ListingDetails": {
+              "StartTime": "2025-08-14T12:07:44.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/DK-Multicoloured-Yarn-Cakes-Bundle-6-x-150g-Blue-Purple-Gradient-Knitting-/357458587807",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/DK-Multicoloured-Yarn-Cakes-Bundle-6-x-150g-Blue-Purple-Gradient-Knitting?item=357458587807&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "19.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": {
+                "ShippingServiceCost": {
+                  "_": "0.0",
+                  "$": {
+                    "currencyID": "GBP"
+                  }
+                },
+                "LocalPickup": "true"
+              },
+              "ShippingType": "Flat"
+            },
+            "TimeLeft": "P28DT11H35M25S",
+            "Title": "DK Multicoloured Yarn Cakes Bundle – 6 x 150g Blue Purple Gradient Knitting",
+            "WatchCount": "2",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/f4cAAeSw1mNondDu/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "19.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357458644166",
+            "ListingDetails": {
+              "StartTime": "2025-08-14T12:14:21.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/Aran-Yarn-Cakes-Bundle-Blue-Gradient-Knitting-Crochet-Craft-Wool-6-x-150g-C7-/357458644166",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/Aran-Yarn-Cakes-Bundle-Blue-Gradient-Knitting-Crochet-Craft-Wool-6-x-150g-C7?item=357458644166&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "19.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P28DT11H42M2S",
+            "Title": "Aran Yarn Cakes Bundle Blue Gradient Knitting/Crochet Craft Wool 6 x 150g C7",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/S7UAAeSwFgZondJU/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "21.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357464711218",
+            "ListingDetails": {
+              "StartTime": "2025-08-15T14:09:31.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/Job-lot-Dark-Blue-With-Midnight-stars-Aran-Knitting-Crotchet-Yarn-15X100g-C8-/357464711218",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/Job-lot-Dark-Blue-With-Midnight-stars-Aran-Knitting-Crotchet-Yarn-15X100g-C8?item=357464711218&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "21.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P29DT13H37M12S",
+            "Title": "Job lot Dark Blue With Midnight stars Aran Knitting/Crotchet Yarn 15X100g C8",
+            "WatchCount": "1",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/UxIAAeSw~t1onzx5/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "21.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357464715263",
+            "ListingDetails": {
+              "StartTime": "2025-08-15T14:11:53.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/Job-Lot-Dark-Velvety-Red-Aran-Knitting-Crochet-Yarn-15-x-100g-C9-/357464715263",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/Job-Lot-Dark-Velvety-Red-Aran-Knitting-Crochet-Yarn-15-x-100g-C9?item=357464715263&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "21.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P29DT13H39M34S",
+            "Title": "Job Lot Dark Velvety Red Aran Knitting/Crochet Yarn 15 x 100g C9",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/dicAAeSwaQdon0Ai/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "21.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357464747056",
+            "ListingDetails": {
+              "StartTime": "2025-08-15T14:32:50.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/Olivia-Chenille-Knitting-Crochet-Yarn-Burnt-Orange-10-x-100g-C11-/357464747056",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/Olivia-Chenille-Knitting-Crochet-Yarn-Burnt-Orange-10-x-100g-C11?item=357464747056&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "21.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P29DT14H31S",
+            "Title": "Olivia Chenille Knitting/Crochet Yarn – Burnt Orange – 10 x 100g C11",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/Zq8AAeSwqp1on0SC/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "21.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357465863162",
+            "ListingDetails": {
+              "StartTime": "2025-08-15T20:59:27.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/Olivia-Chenille-Bright-Pink-Soft-Chunky-Yarn-for-Knitting-Crochet-10x100g-c0-/357465863162",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/Olivia-Chenille-Bright-Pink-Soft-Chunky-Yarn-for-Knitting-Crochet-10x100g-c0?item=357465863162&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "21.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P29DT20H27M8S",
+            "Title": "Olivia Chenille Bright Pink Soft Chunky Yarn for Knitting & Crochet – 10x100g c0",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/wSYAAeSwbHJon5wH/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          },
+          {
+            "BuyItNowPrice": {
+              "_": "19.99",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "ItemID": "357465871560",
+            "ListingDetails": {
+              "StartTime": "2025-08-15T21:05:14.000Z",
+              "ViewItemURL": "https://www.ebay.co.uk/itm/Olivia-Chenille-Yarn-L-Brown-Soft-Chunky-Wool-Knitting-Crochet-10x100g-C11-/357465871560",
+              "ViewItemURLForNaturalSearch": "http://cgi.ebay.co.uk/Olivia-Chenille-Yarn-L-Brown-Soft-Chunky-Wool-Knitting-Crochet-10x100g-C11?item=357465871560&category=36589&cmd=ViewItem"
+            },
+            "ListingDuration": "GTC",
+            "ListingType": "FixedPriceItem",
+            "Quantity": "1",
+            "SellingStatus": {
+              "CurrentPrice": {
+                "_": "19.99",
+                "$": {
+                  "currencyID": "GBP"
+                }
+              }
+            },
+            "ShippingDetails": {
+              "ShippingServiceOptions": "",
+              "ShippingType": "NotSpecified"
+            },
+            "TimeLeft": "P29DT20H32M55S",
+            "Title": "Olivia Chenille Yarn L Brown Soft Chunky Wool - Knitting & Crochet – 10x100g C11",
+            "QuantityAvailable": "1",
+            "PictureDetails": {
+              "GalleryURL": "https://i.ebayimg.com/images/g/0LcAAeSw4oVon5~S/s-l140.jpg"
+            },
+            "ClassifiedAdPayPerLeadFee": {
+              "_": "0.0",
+              "$": {
+                "currencyID": "GBP"
+              }
+            },
+            "SellerProfiles": ""
+          }
+        ]
+      },
+      "PaginationResult": {
+        "TotalNumberOfPages": "1",
+        "TotalNumberOfEntries": "12"
+      }
+    }
+  }
+}
